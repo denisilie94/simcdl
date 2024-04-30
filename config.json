@@ -1,0 +1,47 @@
+{
+  "rng_seed": 24,
+  "n_components": 40,
+  "n_nonzero_coefs": 5,
+  "n_iterations": 10,
+  "transformations": ["cutout", "rotate", "gaussian_noise", "gaussian_blur"],
+  "max_angle": 2,
+  "noise_std": 0.2,
+  "blur_std": 0.5,
+  "cutout_perc": 0.2,
+  "batch_size": 16,
+  "d_up_iterations": 10,
+  "learning_rate": 1e-3,
+  "max_angle_vals": [0, 1, 2, 4],
+  "noise_std_vals": [0, 0.2, 0.4],
+  "blur_std_vals": [0, 0.25, 0.5],
+  "cutout_perc_vals": [0, 0.2, 0.4, 0.6, 0.8],
+  "batch_size_vals": [16, 32, 64, 128],
+  "d_up_iterations_vals": [5, 10, 20],
+  "learning_rate_vals": [1e-2, 1e-3],
+  "datasets": {
+    "yaleb": {
+      "data_path": "randomfaces4extendedyaleb.mat",
+      "number": 32
+    },
+    "ar_face": {
+      "data_path": "randomfaces4ar.mat",
+      "number": 20
+    },
+    "caltech_101": {
+      "data_path": "spatialpyramidfeatures4caltech101.mat",
+      "number": 30
+    },
+    "scene_15": {
+      "data_path": "spatialpyramidfeatures4scene15.mat",
+      "number": 30
+    },
+    "cmupie": {
+      "data_path": "CMUPIE_random_256.mat",
+      "number": 30
+    },
+    "ucf50": {
+      "data_path": "ucf50_dataset.mat",
+      "number": 30
+    }
+  }
+}
